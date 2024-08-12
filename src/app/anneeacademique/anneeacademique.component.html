@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-md-4">
+      <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Année academique</h4>
+            <div class="forms-sample">
+              <div class="form-group">
+                <label for="exampleInputUsername1">Code</label>
+                <input type="text" class="form-control" [(ngModel)]="anneeAcademinique.code"
+                 id="exampleInputUsername1" placeholder="Code">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Libelle</label>
+                <input type="text" class="form-control" [(ngModel)]="anneeAcademinique.libelle"
+                id="exampleInputEmail1" placeholder="Libelle">
+              </div>
+              <button class="btn btn-primary me-2" (click)="enregistrer()">Enregistrer</button>
+              <button class="btn btn-light" (click)="annuler()">Annuler</button>
+          </div>
+          </div>
+        </div>
+  </div>
+  <div class="col-md-8">
+      <div>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Liste des années</h4>
+              
+              <input type="text" class="form-control mb-3" [(ngModel)]="searchText" (input)="applyFilter()" placeholder="Rechercher...">
+           
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Code</th>
+                      <th>Libelle</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let item of filteredAnneeAcademiquesList">
+                      <td>{{ item.code }}</td>
+                      <td>{{ item.libelle }}</td>
+                      <td>
+                          <button type="button" class="btn btn-primary btn-rounded btn-icon"
+                          (click)="editer(item)">
+                              <i class="ti-pencil color-white"></i>
+                            </button>
+                          <button type="button" style="margin-left: 4%;" class="btn btn-danger btn-rounded btn-icon"
+                          (click)="deleteElement(item)">
+                              <i class="ti-trash color-white"></i>
+                            </button>
+                      </td>
+                    </tr>
+                    <tr *ngIf="filteredAnneeAcademiquesList.length == 0">
+                      <td colspan="3" style="text-align: center;">Liste vide ...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>

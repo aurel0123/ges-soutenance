@@ -1,0 +1,130 @@
+<div mat-dialog-title>
+  <h3> {{ planningLicence.id === 0 ? 'Ajouter' : 'Modifier' }} un planning</h3>
+</div>
+<form [formGroup]="formGroup" (ngSubmit)="enregistrer()">
+  <div mat-dialog-content class="contents">
+    <div class="rows">
+      <mat-form-field appearance="outline">
+        <mat-label>Jury</mat-label>
+        <input
+          matInput
+          placeholder="Ex : 1"
+          formControlName="jury"
+          id="jury"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Salle</mat-label>
+        <input
+          matInput
+          placeholder="Ex: Salle A1"
+          formControlName="salle"
+          id="salle"
+        />
+      </mat-form-field>
+    </div>
+    <div class="rows">
+      <mat-form-field appearance="outline">
+        <mat-label>Date</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          formControlName="date"
+          id="date"
+        />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Heure</mat-label>
+        <input
+          matInput
+          type="time"
+          formControlName="heure"
+          id="heure"
+        />
+        <mat-hint>HH:MM</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="rows">
+      <mat-form-field>
+        <mat-label>Étudiant 1</mat-label>
+        <input matInput [formControl]="etudiantControl1" [matAutocomplete]="auto1" />
+        <mat-autocomplete #auto1="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let option of filteredOptions1 | async" [value]="option">
+            {{ option.nom }} {{ option.prenom }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+    <div class="rows">
+      <mat-form-field>
+        <mat-label>Étudiant 2</mat-label>
+        <input matInput [formControl]="etudiantControl2" [matAutocomplete]="auto2" />
+        <mat-autocomplete #auto2="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let option of filteredOptions2 | async" [value]="option">
+            {{ option.nom }} {{ option.prenom }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+    <div class="rows">
+      <mat-form-field appearance="outline">
+        <mat-label>Thèmes</mat-label>
+        <mat-select formControlName="theme">
+          <mat-option *ngFor="let theme of themesList" [value]="theme.id">{{ theme.theme }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="rows">
+      <mat-form-field appearance="outline">
+        <mat-label>Directeur</mat-label>
+        <input
+          matInput
+          placeholder="Ex. Kossi Quenum"
+          formControlName="directeur"
+        />
+      </mat-form-field>
+    </div>
+    <div class="rows">
+      <mat-form-field appearance="outline">
+        <mat-label>Grade</mat-label>
+        <mat-select formControlName="grade">
+          <mat-option *ngFor="let val of grade" [value]="val">{{ val }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>President</mat-label>
+        <mat-select formControlName="president">
+          <mat-option *ngFor="let president of presidentsList" [value]="president.id">{{ president.nom }} {{ president.prenom }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="rows">
+      <mat-form-field appearance="outline">
+        <mat-label>Examinateur</mat-label>
+        <mat-select formControlName="examinateur">
+          <mat-option *ngFor="let president of presidentsList" [value]="president.id">{{ president.nom }} {{ president.prenom }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Rapporteur</mat-label>
+        <mat-select formControlName="rapporteur">
+          <mat-option *ngFor="let president of presidentsList" [value]="president.id">{{ president.nom }} {{ president.prenom }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">
+      Annuler
+    </button>
+    <button mat-raised-button color="primary" type="submit">
+      {{ planningLicence.id === 0 ? 'Enregistrer' : 'Modifier' }}
+    </button>
+  </div>
+</form>

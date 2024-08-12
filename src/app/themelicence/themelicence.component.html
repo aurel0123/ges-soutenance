@@ -1,0 +1,90 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Enregistrement de thème</h4>
+        <div class="forms-sample">
+          <div class="row">
+            <div class="form-group" style="width: 50%;">
+              <label for="theme">Thème</label>
+              <input type="text" class="form-control" [(ngModel)]="themeLicence.theme" id="theme" placeholder="Thème">
+            </div>
+            <div class="form-group" style="width: 50%;">
+              <label for="numberOfEtudiants">Nombre d'étudiants</label>
+              <input type="number" class="form-control" [(ngModel)]="numberOfEtudiants" id="numberOfEtudiants" (input)="updateEtudiantsInputs()" placeholder="Nombre d'étudiants">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="filiere">Filière</label>
+            <select class="form-control" [(ngModel)]="themeLicence.filiere" id="filiere">
+              <option *ngFor="let filiere of filieresList" [ngValue]="filiere">{{ filiere.code }}</option>
+            </select>
+          </div>
+          <div class="row">
+            <div *ngFor="let etudiant of themeLicence.etudiants; let i = index" class="form-group" style="width: 50%;">
+              <label [for]="'etudiant' + i">Étudiant {{ i + 1 }}</label>
+              <input type="text" class="form-control" [(ngModel)]="etudiant.name" [id]="'etudiant' + i" (input)="filterEtudiants(i)" placeholder="Étudiant {{ i + 1 }}">
+              <ul *ngIf="filteredEtudiantsList[i]?.length">
+                <li *ngFor="let suggestion of filteredEtudiantsList[i]" (click)="selectEtudiant(i, suggestion)">
+                  {{ suggestion.name }}
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div style="margin-left: 40%;">
+            <button class="btn btn-primary me-2" (click)="enregistrer()">Enregistrer</button>
+            <button class="btn btn-light" (click)="annuler()">Annuler</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 2%;">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Liste des thèmes</h4>
+          <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="searchText" (input)="filterThemes()" placeholder="Rechercher...">
+          </div>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Thème</th>
+                  <th>Filière</th>
+                  <th>Étudiants</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of filteredThemeLicencesList">
+                  <td class="text-truncate">{{ item.theme }}</td>
+                  <td class="text-truncate">{{ getFiliereLabel(item.filiere) }}</td>
+                  <td class="text-truncate">
+                    <ul>
+                      <li *ngFor="let etudiant of item.etudiants">{{ etudiant.name }}</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-rounded btn-icon" (click)="editer(item)">
+                      <i class="ti-pencil color-white"></i>
+                    </button>
+                    <button type="button" style="margin-left: 4%;" class="btn btn-danger btn-rounded btn-icon" (click)="deleteElement(item)">
+                      <i class="ti-trash color-white"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr *ngIf="filteredThemeLicencesList.length == 0">
+                  <td colspan="4" style="text-align: center;">Liste vide ...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.table th, .table td {
+    max-width: 200px; /* Ajustez cette valeur selon vos besoins */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .table-responsive {
+    overflow-x: hidden;
+  }

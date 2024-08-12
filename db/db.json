@@ -1,0 +1,502 @@
+{
+  "filieres": [
+    {
+      "id": "1",
+      "code": "RGL",
+      "libelle": "Reseau Genie Logiciel"
+    },
+    {
+      "id": "2",
+      "code": "RMS",
+      "libelle": "Reseau Mobilité Sécurité"
+    },
+    {
+      "id": "3",
+      "code": "MRH",
+      "libelle": "Management des Ressources Humaines"
+    },
+    {
+      "id": "4",
+      "code": "CDM",
+      "libelle": "Communication Digitale Marketing"
+    },
+    {
+      "id": "5",
+      "code": "CIB",
+      "libelle": "Commerce International Banque"
+    },
+    {
+      "id": "6",
+      "code": "EGP",
+      "libelle": "Entreprenariat Gestion Projet"
+    },
+    {
+      "id": "7",
+      "code": "CG",
+      "libelle": "Controle de Gestion"
+    },
+    {
+      "id": "8",
+      "code": "DCJ",
+      "libelle": "Droit etc"
+    },
+    {
+      "id": "9",
+      "code": "GTL",
+      "libelle": "Gestion Transport Logistique"
+    },
+    {
+      "id": "10",
+      "code": "DECOGEF",
+      "libelle": "Expertise comptable"
+    }
+  ],
+  "niveauEtudes": [
+    {
+      "id": "1",
+      "code": "AzertRRC",
+      "libelle": "1re année"
+    },
+    {
+      "id": "2",
+      "code": "01",
+      "libelle": "Reseau"
+    }
+  ],
+  "anneeAcademiques": [
+    {
+      "id": "111",
+      "code": "02",
+      "libelle": "2024-2026"
+    },
+    {
+      "id": "1111",
+      "code": "10",
+      "libelle": "2023-24"
+    }
+  ],
+  "presidents": [
+    {
+      "id": "21",
+      "nom": "DOSSOU",
+      "prenom": "Charlene",
+      "telephone": "97180222",
+      "email": "dossoucharlene@gmail.com"
+    },
+    {
+      "id": "211",
+      "nom": "YEOU",
+      "prenom": "paul",
+      "telephone": "67738127",
+      "email": "yeou.jean@pigierbenin.com"
+    }
+  ],
+  "licences": [
+    {
+      "id": "c341",
+      "matricule": "20232666DEGU25011983",
+      "nom": "BOCO",
+      "prenom": "Dédjinnatchi Rodrigue ",
+      "dateNaissance": "2020-08-10",
+      "lieuNaissance": "Cotonou",
+      "filiere": "RMS2"
+    },
+    {
+      "id": "0572",
+      "matricule": "20221762AKUE29092009",
+      "nom": "AKOUETE-AKUE",
+      "prenom": "Adovi Greg",
+      "dateNaissance": "2004-07-22",
+      "lieuNaissance": "Cotonou",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "2c06",
+      "matricule": "20221762GBA29092010",
+      "nom": "GBADAMASSI",
+      "prenom": "Amoudath",
+      "dateNaissance": "2004-07-23",
+      "lieuNaissance": "Paris",
+      "filiere": "RGL2 "
+    },
+    {
+      "id": "85f5",
+      "matricule": "20180089AGOS01112001",
+      "nom": "MAFORIKAN ",
+      "prenom": "Gilles ",
+      "dateNaissance": "2023-02-14",
+      "lieuNaissance": "Paris",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "c1e1",
+      "matricule": "20221586ABDO01051998",
+      "nom": "DOSSOU",
+      "prenom": "Dorian",
+      "dateNaissance": "2001-12-12",
+      "lieuNaissance": "Ganvie",
+      "filiere": "RMS2"
+    },
+    {
+      "id": "387a",
+      "matricule": "20221875ABOU12061990",
+      "nom": "KODJOGBE",
+      "prenom": "Aurel",
+      "dateNaissance": "2000-07-15",
+      "lieuNaissance": "Apkapka",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "6c5a",
+      "matricule": "20221762AGBO29092002",
+      "nom": " NOUNAGNON ",
+      "prenom": "Péniel",
+      "dateNaissance": "2004-07-15",
+      "lieuNaissance": "Paris",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "4989",
+      "matricule": "20221762AKOU29092001",
+      "nom": "DOGO",
+      "prenom": "Charles-Cecil",
+      "dateNaissance": "2004-07-14",
+      "lieuNaissance": "Cotonou",
+      "filiere": "RGL2 "
+    },
+    {
+      "id": "21ba",
+      "matricule": "20221762AGOSSOU29092003",
+      "nom": "AGBESSI",
+      "prenom": "Aurel",
+      "dateNaissance": "2004-07-16",
+      "lieuNaissance": "Ganvie",
+      "filiere": "RMS2"
+    },
+    {
+      "id": "8c34",
+      "matricule": "20221762KPODEDJI29092004",
+      "nom": "KPODEDJI ",
+      "prenom": "Emeric",
+      "dateNaissance": "2004-07-17",
+      "lieuNaissance": "Apkapka",
+      "filiere": "RMS2"
+    },
+    {
+      "id": "cb4e",
+      "matricule": "20221762HIN29092005",
+      "nom": "HINSON",
+      "prenom": "Eliamel",
+      "dateNaissance": "2004-07-18",
+      "lieuNaissance": "Cotonou",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "69d1",
+      "matricule": "20221762BEN29092006",
+      "nom": "BENTHO",
+      "prenom": "Féliciano ",
+      "dateNaissance": "2004-07-19",
+      "lieuNaissance": "PariSS",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "2d8b",
+      "matricule": "20221762AKA29092007",
+      "nom": "AKADIRI",
+      "prenom": "Amzat Ayinla",
+      "dateNaissance": "2004-07-20",
+      "lieuNaissance": "Ganvie",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "d358",
+      "matricule": "20221762OSS29092008",
+      "nom": "OSSENI",
+      "prenom": "Kossim",
+      "dateNaissance": "2004-07-21",
+      "lieuNaissance": "Apkapka",
+      "filiere": "RMS2"
+    }
+  ],
+  "masteres": [
+    {
+      "id": "f6d7",
+      "matricule": "20232666DEGU25011983",
+      "nom": "BOCO",
+      "prenom": "Dédjinnatchi Rodrigue ",
+      "dateNaissance": "2020-08-10",
+      "lieuNaissance": "Cotonou",
+      "filiere": "RMS2"
+    },
+    {
+      "id": "de3b",
+      "matricule": "20180089AGOS01112001",
+      "nom": "MAFORIKAN ",
+      "prenom": "Gilles ",
+      "dateNaissance": "2023-02-14",
+      "lieuNaissance": "Paris",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "b0e4",
+      "matricule": "20221586ABDO01051998",
+      "nom": "DOSSOU",
+      "prenom": "Dorian",
+      "dateNaissance": "2001-12-12",
+      "lieuNaissance": "Ganvie",
+      "filiere": "RMS2"
+    },
+    {
+      "id": "f7a7",
+      "matricule": "20221875ABOU12061990",
+      "nom": "KODJOGBE",
+      "prenom": "Aurel",
+      "dateNaissance": "2000-07-15",
+      "lieuNaissance": "Apkapka",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "e184",
+      "matricule": "20221762AKOU29092001",
+      "nom": "DOGO",
+      "prenom": "Charles-Cecil",
+      "dateNaissance": "2004-07-14",
+      "lieuNaissance": "Cotonou",
+      "filiere": "RGL2 "
+    },
+    {
+      "id": "e8af",
+      "matricule": "20221762AGBO29092002",
+      "nom": " NOUNAGNON ",
+      "prenom": "Péniel",
+      "dateNaissance": "2004-07-15",
+      "lieuNaissance": "Paris",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "5d6a",
+      "matricule": "20221762KPODEDJI29092004",
+      "nom": "KPODEDJI ",
+      "prenom": "Emeric",
+      "dateNaissance": "2004-07-17",
+      "lieuNaissance": "Apkapka",
+      "filiere": "RMS2"
+    },
+    {
+      "id": "8a0d",
+      "matricule": "20221762HIN29092005",
+      "nom": "HINSON",
+      "prenom": "Eliamel",
+      "dateNaissance": "2004-07-18",
+      "lieuNaissance": "Cotonou",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "9a7d",
+      "matricule": "20221762AGOSSOU29092003",
+      "nom": "AGBESSI",
+      "prenom": "Aurel",
+      "dateNaissance": "2004-07-16",
+      "lieuNaissance": "Ganvie",
+      "filiere": "RMS2"
+    },
+    {
+      "id": "aebe",
+      "matricule": "20221762BEN29092006",
+      "nom": "BENTHO",
+      "prenom": "Féliciano ",
+      "dateNaissance": "2004-07-19",
+      "lieuNaissance": "Paris",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "53ce",
+      "matricule": "20221762AKA29092007",
+      "nom": "AKADIRI",
+      "prenom": "Amzat Ayinla",
+      "dateNaissance": "2004-07-20",
+      "lieuNaissance": "Ganvie",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "635c",
+      "matricule": "20221762OSS29092008",
+      "nom": "OSSENI",
+      "prenom": "Kossim",
+      "dateNaissance": "2004-07-21",
+      "lieuNaissance": "Apkapka",
+      "filiere": "RMS2"
+    },
+    {
+      "id": "dca6",
+      "matricule": "20221762AKUE29092009",
+      "nom": "AKOUETE-AKUE",
+      "prenom": "Adovi Greg",
+      "dateNaissance": "2004-07-22",
+      "lieuNaissance": "Cotonou",
+      "filiere": "RGL2"
+    },
+    {
+      "id": "0b04",
+      "matricule": "20221762GBA29092010",
+      "nom": "GBADAMASSI",
+      "prenom": "Amoudath",
+      "dateNaissance": "2004-07-23",
+      "lieuNaissance": "Paris",
+      "filiere": "RGL2 "
+    }
+  ],
+  "themeLicences": [
+    {
+      "id": "9580",
+      "theme": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      "filiere": "RGL",
+      "etudiants": [
+        {
+          "name": "KODJOGBE Aurel"
+        },
+        {
+          "name": "DOGO charles-Cecil"
+        }
+      ]
+    },
+    {
+      "id": "64ab",
+      "theme": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      "filiere": "CG",
+      "etudiants": [
+        {
+          "name": "KODJOGBE Aurel"
+        },
+        {
+          "name": "DOGO charles-Cecil"
+        }
+      ]
+    },
+    {
+      "id": "8523",
+      "theme": "la perspective de développement des anniversaires en significatif de dendjncjnjncuni,ci,rivninrivnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+      "filiere": "RMS",
+      "etudiants": [
+        {
+          "name": "DOSSOU Romaric"
+        }
+      ]
+    },
+    {
+      "id": "0d9d",
+      "theme": "lo",
+      "filiere": "MRH",
+      "etudiants": [
+        {
+          "name": "yh"
+        }
+      ]
+    },
+    {
+      "id": "a108",
+      "theme": "lAZERt",
+      "filiere": "RGL",
+      "etudiants": [
+        {
+          "name": "ffrr"
+        }
+      ]
+    },
+    {
+      "id": "1f78",
+      "theme": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      "filiere": "EGP",
+      "etudiants": [
+        {
+          "name": "KODJOGBE Aurel"
+        }
+      ]
+    },
+    {
+      "id": "bc03",
+      "theme": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      "filiere": "MRH",
+      "etudiants": [
+        {
+          "name": "KODJOGBE Aurel"
+        }
+      ]
+    },
+    {
+      "id": "bf3e",
+      "theme": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      "filiere": "DCJ",
+      "etudiants": [
+        {
+          "name": "KODJOGBE Aurel"
+        }
+      ]
+    }
+  ],
+  "planningLicences": [
+    {
+      "id": "1",
+      "jury": "23",
+      "salle": "Salle A2",
+      "date": "2024-08-20T23:00:00.000Z",
+      "heure": "12:09",
+      "theme": "",
+      "directeur": "Mr Kossi",
+      "president": "",
+      "examinateur": "",
+      "rapporteur": "",
+      "etudiant1": {
+        "id": "c341",
+        "matricule": "20232666DEGU25011983",
+        "nom": "BOCO",
+        "prenom": "Dédjinnatchi Rodrigue ",
+        "dateNaissance": "2020-08-10",
+        "lieuNaissance": "Cotonou",
+        "filiere": "RMS2"
+      },
+      "etudiant2": {
+        "id": "c1e1",
+        "matricule": "20221586ABDO01051998",
+        "nom": "DOSSOU",
+        "prenom": "Dorian",
+        "dateNaissance": "2001-12-12",
+        "lieuNaissance": "Ganvie",
+        "filiere": "RMS2"
+      },
+      "grade": "Ingenieur"
+    },
+    {
+      "id": "11",
+      "jury": "3",
+      "salle": "Salle A2",
+      "date": "2024-08-13T23:00:00.000Z",
+      "heure": "15:09",
+      "theme": "lo",
+      "directeur": "Mr Kossi",
+      "president": "YEOU paul",
+      "examinateur": "YEOU paul",
+      "rapporteur": "YEOU paul",
+      "etudiant1": {
+        "id": "2c06",
+        "matricule": "20221762GBA29092010",
+        "nom": "GBADAMASSI",
+        "prenom": "Amoudath",
+        "dateNaissance": "2004-07-23",
+        "lieuNaissance": "Paris",
+        "filiere": "RGL2 "
+      },
+      "etudiant2": {
+        "id": "c1e1",
+        "matricule": "20221586ABDO01051998",
+        "nom": "DOSSOU",
+        "prenom": "Dorian",
+        "dateNaissance": "2001-12-12",
+        "lieuNaissance": "Ganvie",
+        "filiere": "RMS2"
+      },
+      "grade": "Ingenieur"
+    }
+  ]
+}

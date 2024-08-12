@@ -1,0 +1,19 @@
+.table-container {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+}
+tr{
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  margin: 10px ;
+
+}
+.custome
+{
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}

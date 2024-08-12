@@ -1,0 +1,64 @@
+<div class="">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title">
+        <div class="container-fluid d-flex custome">
+          <h3>Planning</h3>
+          <button class="btn btn-primary btn-rounded btn-icon" type="submit" (click)="openAddPlanningForm()">
+            <i class="mdi mdi-plus"></i>
+          </button>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Rechercher..." (input)="applyFilter($event)" />
+          <div class="input-group-append">
+            <span class="input-group-text"><i class="mdi mdi-magnify"></i></span>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Jury</th>
+                <th scope="col">Salle</th>
+                <th scope="col">Date et Heure</th>
+                <th scope="col">Nom et Prénom</th>
+                <th scope="col">Thèmes</th>
+                <th scope="col">Directeur</th>
+                <th scope="col">Grade</th>
+                <th scope="col">President</th>
+                <th scope="col">Examinateur</th>
+                <th scope="col">Rapporteur</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngIf="planningLicencesList.length === 0">
+                <td colspan="11" style="text-align: center;">Liste vide ...</td>
+              </tr>
+              <tr *ngFor="let planning of planningLicencesList">
+                <td>{{ planning.jury }}</td>
+                <td>{{ planning.salle }}</td>
+                <td>{{ planning.date }} {{ planning.heure }}</td>
+                <td>{{planning.etudiant1.nom }} {{planning.etudiant1.prenom }} /  {{planning.etudiant2.nom }} {{planning.etudiant2.prenom }} </td>
+                <td>{{ planning.theme }}</td>
+                <td>{{ planning.directeur }}</td>
+                <td>{{ planning.grade }}</td>
+                <td>{{ planning.president }}</td>
+                <td>{{ planning.examinateur }}</td>
+                <td>{{ planning.rapporteur }}</td>
+                <td>
+                  <button mat-icon-button color="primary" (click)="openEditPlanningForm(planning)">
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                  <button mat-icon-button color="warn" (click)="deletePlanning(planning.id)">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
